@@ -38,7 +38,7 @@ public class WizardsWand {
 
 	public void initClient() {
 		EventManager.register(this);
-		Display.setTitle(getClientName() + " (rel-" + "2B" + ")");
+		//Display.setTitle(getClientName() + " (rel-" + "2B" + ")");
 
 		moduleManager = new ModuleManager();
 		moduleManager.AddModules();

@@ -53,7 +53,7 @@ public class Module {
 	}
 	
 	public void onEnable(){
-		Random randomColor = new Random();
+		/*Random randomColor = new Random();
 		StringBuilder sb = new StringBuilder();
 		sb.append("0x");
 		while(sb.length() < 10){
@@ -61,7 +61,7 @@ public class Module {
 		}
 		sb.setLength(8);
 		this.color = Integer.decode(sb.toString()).intValue();
-		
+		*/
 		
 		
 		
