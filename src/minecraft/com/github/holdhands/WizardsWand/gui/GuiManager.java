@@ -186,7 +186,7 @@ public final class GuiManager extends AbstractGuiManager {
 					theme = new SimpleTheme();
 					break;
 				case 1: 
-					//theme = new CrytonTheme();
+					//theme = new EpicTheme();
 					break;
 					
 				default:
