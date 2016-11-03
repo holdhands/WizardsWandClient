@@ -24,6 +24,7 @@ public class ModuleManager {
 		this.activeModules.add(new NoFall());
 		this.activeModules.add(new Gui());
 		this.activeModules.add(new UpdateAll());
+		this.activeModules.add(new Gui2());
 		
 		System.out.println("ADDMODULES");
 	}

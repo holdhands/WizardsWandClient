@@ -8,10 +8,10 @@ import com.github.holdhands.WizardsWand.module.Category;
 import com.github.holdhands.WizardsWand.module.Module;
 import com.github.holdhands.WizardsWand.wrapper.Wrapper;
 
-public class Gui extends Module {
+public class Gui2 extends Module {
 
-	public Gui() {
-		super("Click Gui", "", Keyboard.KEY_LCONTROL, Category.GUI);
+	public Gui2() {
+		super("Click Gui", "", Keyboard.KEY_GRAVE, Category.GUI);
 		
 	}
 
