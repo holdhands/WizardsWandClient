@@ -10,6 +10,7 @@ import com.github.holdhands.WizardsWand.module.Module;
 import com.github.holdhands.WizardsWand.module.ModuleManager;
 import com.github.holdhands.WizardsWand.module.modules.Flight;
 
+import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
 import me.imfr0zen.guiapi.ClickGui;
 import me.imfr0zen.guiapi.Colors;
 import me.imfr0zen.guiapi.Frame;
@@ -25,21 +26,31 @@ public class GuiMng extends ClickGui {
 
 	@Override
 	public void initGui() {
+		
 		Colors.setButtonColor(0, 80, 250, 200);
 		GuiFrame testFrame = new GuiFrame("Test", 25, 50);
+		
+		
 	
 		addFrame(testFrame);
 		
+	
+		
 		//FLIGHT
-		Button flighttoggle = new Button("Flight");
+		final Button flighttoggle = new Button("Flight");
 		flighttoggle.addExtendListener(new ExtendListener() {
 			
 			@Override
 			public void addComponents() {
+				
+				
+				
 				/**
 				 * Creates a new Instance of GuiToggleButton
 				 */
 				final GuiToggleButton togglebutton = new GuiToggleButton("Flight");
+		
+			
 				
 				/**
 				 * Adds a ClickListener
@@ -99,6 +110,11 @@ public class GuiMng extends ClickGui {
 		});
 		testFrame.addButton(FullBrightToggle);
 		//END FULLBRIGHT
-
-	}
+	super.initGui();
+	
+		
+}	
+	public void onGuiClosed() {
+	
+	};
 }

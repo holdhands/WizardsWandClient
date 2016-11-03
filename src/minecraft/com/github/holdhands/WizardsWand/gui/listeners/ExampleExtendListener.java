@@ -66,5 +66,10 @@ public class ExampleExtendListener extends ExtendListener {
 
 		add(new GuiTree("Examples", slider, getKey, textField));
 	}
-
+	public void onGuiClosed() {
+		/*
+		 * Save the locations of the frames here
+		 */
+		
+	};
 }

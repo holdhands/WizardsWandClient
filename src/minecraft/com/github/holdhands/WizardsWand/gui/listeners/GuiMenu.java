@@ -3,6 +3,8 @@ package com.github.holdhands.WizardsWand.gui.listeners;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import com.github.holdhands.WizardsWand.module.ModuleManager;
+
 import me.imfr0zen.guiapi.Colors;
 import me.imfr0zen.guiapi.GuiFrame;
 import me.imfr0zen.guiapi.components.Button;
@@ -33,8 +35,10 @@ public class GuiMenu extends me.imfr0zen.guiapi.ClickGui {
 
 					@Override
 					public void actionPerformed(ActionEvent e) {
-
+						
+					
 						System.out.println("Flight-State: " + toggleflight.isToggled());
+						ModuleManager.setModuleState("Flight", toggleflight.isToggled());
 					}
 				});
 				add(toggleflight);
@@ -56,6 +60,9 @@ public class GuiMenu extends me.imfr0zen.guiapi.ClickGui {
 				public void actionPerformed(ActionEvent e) {
 				
 					System.out.println("FullBright-State: " + toggleFullBright.isToggled());
+					ModuleManager.setModuleState("FullBright", toggleFullBright.isToggled());
+					
+					
 					
 				}
 			});

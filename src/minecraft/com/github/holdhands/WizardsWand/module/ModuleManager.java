@@ -50,5 +50,20 @@ public class ModuleManager {
 			}
 		}
 	}
+	public static boolean getModState(String modName){
+		for(Module m : activeModules){
+			if(m.getName().equalsIgnoreCase(modName.trim())){
+				System.out.println(m.getState());
+				return m.getState();
+				
+			}
+		}
+		return false;
+	}
+	
+	
+	
+	
+	
 
 }
