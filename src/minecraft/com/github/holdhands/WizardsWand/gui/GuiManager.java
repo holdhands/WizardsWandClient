@@ -175,7 +175,7 @@ public final class GuiManager extends AbstractGuiManager {
 		Theme theme = getTheme();
 		Frame testFrame = new BasicFrame("Theme Manager");
 		testFrame.setTheme(theme);
-		ComboBox comboBox = new BasicComboBox("Simple Theme", "Opiates Theme");
+		ComboBox comboBox = new BasicComboBox("Simple Theme", "NULL");
 		comboBox.addComboBoxListener(new ComboBoxListener() {
 			
 			@Override

@@ -28,7 +28,7 @@ public class UpdateAll extends Module{
 	@EventTarget
 	public void onUpdate(EventUpdate e){
 		
-		//GuiIngame.renderHaxHud();
+	
 	}
 
 }

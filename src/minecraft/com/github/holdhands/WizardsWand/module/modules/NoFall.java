@@ -16,7 +16,7 @@ public class NoFall extends Module{
 
 	public NoFall() {
 		super("NoFall", "No fall" , Keyboard.KEY_P, Category.MOVEMENT);
-		// TODO Auto-generated constructor stub
+	
 	}
 
 	
@@ -41,6 +41,7 @@ public class NoFall extends Module{
 
 			if(Wrapper.getInstance().getMinecraft().thePlayer.fallDistance > 2)
 				Wrapper.getInstance().getMinecraft().thePlayer.connection.sendPacket(new CPacketPlayer(true));
+				
 		}else{
 			
 		}
