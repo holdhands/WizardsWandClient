@@ -3,6 +3,7 @@ package net.minecraft.client;
 import com.darkmagician6.eventapi.EventManager;
 import com.github.holdhands.WizardsWand.WizardsWand;
 import com.github.holdhands.WizardsWand.events.EventKeyBoard;
+import com.github.holdhands.WizardsWand.gui.DisplayHud;
 import com.github.holdhands.WizardsWand.ui.MainMenuHook;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Queues;
@@ -594,7 +595,7 @@ public class Minecraft implements IThreadListener, ISnooperInfo
         GlStateManager.viewport(0, 0, this.displayWidth, this.displayHeight);
         this.effectRenderer = new ParticleManager(this.theWorld, this.renderEngine);
         this.checkGLError("Post startup");
-        this.ingameGUI = new GuiIngame(this);
+        this.ingameGUI = new DisplayHud(this);
         WizardsWand theClient = new WizardsWand(); 
         theClient.initClient();
 

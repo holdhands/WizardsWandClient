@@ -14,7 +14,7 @@ public class ModuleManager {
 	public static ArrayList<Module> activeModules = new ArrayList<Module>();
 	
 	public void AddModules(){
-		this.activeModules.add(new Hud());
+		//this.activeModules.add(new Hud());
 		//this.activeModules.add(new BetterHud());
 		this.activeModules.add(new SimpleStep());
 		this.activeModules.add(new Flight());

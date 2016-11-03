@@ -9,6 +9,7 @@ import com.github.holdhands.WizardsWand.module.Category;
 import com.github.holdhands.WizardsWand.module.Module;
 import com.github.holdhands.WizardsWand.module.ModuleManager;
 import com.github.holdhands.WizardsWand.module.modules.Flight;
+import com.github.holdhands.WizardsWand.module.modules.Glide;
 
 import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
 import me.imfr0zen.guiapi.ClickGui;
@@ -25,7 +26,7 @@ public class GuiMng extends ClickGui {
 	}
 
 	@Override
-	public void initGui() {
+	public  void initGui() {
 		
 		Colors.setButtonColor(0, 80, 250, 200);
 		GuiFrame testFrame = new GuiFrame("Test", 25, 50);
@@ -77,8 +78,8 @@ public class GuiMng extends ClickGui {
 		//END FLIGHT
 		
 		//FULLBRIGHT
-		final Button FullBrightToggle = new Button("FullBright");
-		FullBrightToggle.addExtendListener(new ExtendListener() {
+		final Button FullBrightExpand = new Button("FullBright");
+		FullBrightExpand.addExtendListener(new ExtendListener() {
 			
 			@Override
 			public void addComponents() {
@@ -104,12 +105,38 @@ public class GuiMng extends ClickGui {
 				/**
 				 * Adds the ToggleButton to the Pane.
 				 */
-				add(FullBrightToggle);
+				add(FullBrightExpand);
 			}
 			
 		});
-		testFrame.addButton(FullBrightToggle);
+		testFrame.addButton(FullBrightExpand);
 		//END FULLBRIGHT
+		
+		
+		final Button about = new Button("About");
+		about.addExtendListener(new ExtendListener() {
+			
+			@Override
+			public void addComponents() {
+			
+				final Button site = new Button("Site");
+				
+				site.addClickListener(new ActionListener() {
+					
+					@Override
+					public void actionPerformed(ActionEvent e) {
+					System.out.println("Website Clicked");
+						
+					}
+				});
+				
+			}
+		});
+		
+		
+
+	testFrame.addButton(about);
+		
 	super.initGui();
 	
 		

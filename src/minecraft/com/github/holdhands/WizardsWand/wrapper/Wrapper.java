@@ -28,6 +28,7 @@ private static Wrapper theWrapper = new Wrapper();
 	//FONTS
 	public static FontUtils fu_Impact = new FontUtils("Impact", Font.PLAIN, 18);
 	public static FontUtils fu_Dunkin = new FontUtils("Dunkin", Font.PLAIN, 18);
+	//public static FontUtils fu = new FontUtils(, fontType, size)
 	
 	public static Wrapper getInstance(){
 		return theWrapper;
