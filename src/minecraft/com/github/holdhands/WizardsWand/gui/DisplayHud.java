@@ -7,29 +7,20 @@ import com.github.holdhands.WizardsWand.wrapper.Wrapper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiIngame;
 
-public class DisplayHud extends GuiIngame{
+public class DisplayHud extends GuiIngame {
 
 	public DisplayHud(Minecraft mcIn) {
 		
-		
-
-		
 		super(mcIn);
+		TTFManager.getInstance().getStandardFont().drawString("WizardsWand", 50, 50, 0xff00FF00);
+		System.out.println("Render");
+		System.out.println("Render");
+		System.out.println("Render");
+		System.out.println("Render");
+		System.out.println("Render");
+		System.out.println("Render");
+	}
 
-	}
-	
-	public void RenderMark(){
-		
-		TTFManager.getInstance().getStandardFont().drawString("WizardsWand", 1, 1, 0xff00FF00);
-		
-		
-	}
-	
-	public void func_175180_a(float p_175180_1_){
-		
-		RenderMark();
-		
-	}
-	
+
 
 }
