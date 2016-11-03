@@ -18,8 +18,8 @@ public class Gui extends Module {
 	
 	public void onToggle() {
 		
-	//Wrapper.getInstance().getMinecraft().displayGuiScreen(WizardsWand.theClient.getGui());
-	Wrapper.getInstance().getMinecraft().displayGuiScreen(new ExampleGuiScreen());
+	Wrapper.getInstance().getMinecraft().displayGuiScreen(WizardsWand.theClient.getGui());
+	//Wrapper.getInstance().getMinecraft().displayGuiScreen(new ExampleGuiScreen());
 	}
 
 }
