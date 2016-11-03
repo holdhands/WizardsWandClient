@@ -42,7 +42,7 @@ public class ModuleManager {
 		return null;
 	}
 	
-	public void setModuleState(String modName, boolean state){
+	public static void setModuleState(String modName, boolean state){
 		for(Module m : activeModules){
 			if(m.getName().equalsIgnoreCase(modName.trim())){
 				m.setState(state);

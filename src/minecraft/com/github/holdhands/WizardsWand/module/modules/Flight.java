@@ -17,9 +17,7 @@ import net.minecraft.network.play.client.CPacketPlayer;
 public class Flight extends Module {
 	
 	
-	Value flightSpeed = new Value("Flight Speed", 10, 5, 100, ValueDisplay.INTEGER);
-	
-	public static float flyHackSpeed = 0.1f;
+
 	public static Boolean isEnabled;
 
 	public Flight() {
@@ -46,7 +44,7 @@ public class Flight extends Module {
 
 	@EventTarget
 	public void onUpdate(EventUpdate event) {
-
+	
 		if (Wrapper.getInstance().getMinecraft().thePlayer.isCreative() == false) {
 			if (this.getState()) {
 				Wrapper.getInstance().getPlayer().capabilities.isFlying = true;
@@ -58,7 +56,7 @@ public class Flight extends Module {
 			} else if (Wrapper.getInstance().getMinecraft().gameSettings.keyBindSneak.isPressed()) {
 
 			} else if (Wrapper.getInstance().getMinecraft().gameSettings.keyBindForward.isPressed()) {
-				Wrapper.getInstance().getMinecraft().thePlayer.capabilities.setFlySpeed(flyHackSpeed);
+			
 			}
 
 		}
