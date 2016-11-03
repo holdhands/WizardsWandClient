@@ -1,4 +1,4 @@
-package com.github.holdhands.WizardsWand.gui;
+package com.github.holdhands.WizardsWand.gui.listeners;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

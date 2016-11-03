@@ -5,6 +5,7 @@ import org.lwjgl.input.Keyboard;
 import com.github.holdhands.WizardsWand.WizardsWand;
 import com.github.holdhands.WizardsWand.gui.ExampleGuiScreen;
 import com.github.holdhands.WizardsWand.gui.GuiMng;
+import com.github.holdhands.WizardsWand.gui.listeners.GuiMenu;
 import com.github.holdhands.WizardsWand.module.Category;
 import com.github.holdhands.WizardsWand.module.Module;
 import com.github.holdhands.WizardsWand.wrapper.Wrapper;
@@ -20,7 +21,7 @@ public class Gui2 extends Module {
 	public void onToggle() {
 		
 	//Wrapper.getInstance().getMinecraft().displayGuiScreen(WizardsWand.theClient.getGui());
-	Wrapper.getInstance().getMinecraft().displayGuiScreen(new GuiMng());
+	Wrapper.getInstance().getMinecraft().displayGuiScreen(new GuiMenu());
 	}
 
 }

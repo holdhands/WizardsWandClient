@@ -1,4 +1,4 @@
-package com.github.holdhands.WizardsWand.gui;
+package com.github.holdhands.WizardsWand.gui.listeners;
 
 import me.imfr0zen.guiapi.listeners.ExtendListener;
 

@@ -5,6 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.URI;
 
+import com.github.holdhands.WizardsWand.gui.listeners.ExampleClickListener;
+import com.github.holdhands.WizardsWand.gui.listeners.ExampleExtendListener;
+
 import me.imfr0zen.guiapi.ClickGui;
 import me.imfr0zen.guiapi.Colors;
 import me.imfr0zen.guiapi.GuiFrame;

@@ -28,14 +28,11 @@ public class GuiMng extends ClickGui {
 		Colors.setButtonColor(0, 80, 250, 200);
 		GuiFrame testFrame = new GuiFrame("Test", 25, 50);
 	
-
-		
-
 		addFrame(testFrame);
 		
-	
-		Button anotherTestButton = new Button("Flight");
-		anotherTestButton.addExtendListener(new ExtendListener() {
+		//FLIGHT
+		Button flighttoggle = new Button("Flight");
+		flighttoggle.addExtendListener(new ExtendListener() {
 			
 			@Override
 			public void addComponents() {
@@ -65,9 +62,43 @@ public class GuiMng extends ClickGui {
 			}
 			
 		});
-		testFrame.addButton(anotherTestButton);
+		testFrame.addButton(flighttoggle);
+		//END FLIGHT
 		
-	
+		//FULLBRIGHT
+		final Button FullBrightToggle = new Button("FullBright");
+		FullBrightToggle.addExtendListener(new ExtendListener() {
+			
+			@Override
+			public void addComponents() {
+				/**
+				 * Creates a new Instance of GuiToggleButton
+				 */
+				final GuiToggleButton togglefullbright = new GuiToggleButton("FullBright");
+				
+				/**
+				 * Adds a ClickListener
+				 */
+				togglefullbright.addClickListener(new ActionListener() {
+					
+					@Override
+					public void actionPerformed(ActionEvent actionevent2) {
+						System.out.println("Button-State: " + togglefullbright.isToggled());
+						
+						ModuleManager.setModuleState("FullBright", togglefullbright.isToggled());
+					
+					}
+				});
+				
+				/**
+				 * Adds the ToggleButton to the Pane.
+				 */
+				add(FullBrightToggle);
+			}
+			
+		});
+		testFrame.addButton(FullBrightToggle);
+		//END FULLBRIGHT
 
 	}
 }
